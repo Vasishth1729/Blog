@@ -1,46 +1,71 @@
-html, body {
-    height: 100%;
+/* Resetting some default margins and paddings */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
-container {
-    width: 100%;
-    max-width: 800px; /* Adjust based on your preference */
+/* Styling the body with a light background and a sans-serif font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for centering the content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-transform: uppercase;
+    margin: 0;
 }
 
-header, main, footer {
-    width: 100%;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-}
-
-.introduction, aside {
+/* Main content area styling */
+main {
+    padding: 20px;
+    background: #fff;
     margin-top: 20px;
 }
 
-aside img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+/* Section and text styling */
+section h2 {
+    color: #333;
+}
+
+section p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Link styling in the footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 footer a {
-    margin: 0 10px;
+    color: #fff;
     text-decoration: none;
-    color: black;
 }
+
+footer a:hover {
+    color: #0779e4;
+}
+
