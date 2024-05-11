@@ -1,27 +1,25 @@
-body, html {
+html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
-header, main, footer {
-    text-align: center;
+container {
     width: 100%;
+    max-width: 800px; /* Adjust based on your preference */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header {
-    background-color: transparent;
-}
-
-nav {
-    margin: 20px 0;
+header, main, footer {
+    width: 100%;
 }
 
 nav a {
@@ -31,25 +29,14 @@ nav a {
     font-size: 1.2em;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.introduction {
-    max-width: 600px;
+.introduction, aside {
+    margin-top: 20px;
 }
 
 aside img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 20px;
-}
-
-footer {
-    margin-top: 20px;
 }
 
 footer a {
@@ -57,4 +44,3 @@ footer a {
     text-decoration: none;
     color: black;
 }
-
