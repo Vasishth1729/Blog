@@ -1,44 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-header {
-    background-color: #f3f3f3;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
-header h1 {
-    margin: 0;
+header, main, footer {
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: transparent;
+}
+
+nav {
+    margin: 20px 0;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
     color: black;
+    font-size: 1.2em;
 }
 
 main {
     display: flex;
-    justify-content: space-around;
-    width: 80%;
-    max-width: 1200px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .introduction {
-    flex: 1;
+    max-width: 600px;
 }
 
 aside img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-top: 20px;
 }
 
 footer {
@@ -50,3 +57,4 @@ footer a {
     text-decoration: none;
     color: black;
 }
+
